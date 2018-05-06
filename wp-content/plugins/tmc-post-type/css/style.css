@@ -1,0 +1,64 @@
+.metaPageLable {
+    width: 20%;
+    float: left;
+}
+.metaPageValue {
+    width: 80%;
+}
+img.metaPageImage {
+	width: 20%;
+}
+.ind_upload_image.upload_button_page.button-primary {
+    vertical-align: top;
+}
+.metaInput input {
+    width: 40%;
+	padding: 10px;
+}
+.mainBody{
+	padding: 1.8em 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.alignmentTitle{
+    padding-right: 18px;
+	padding-left: 5px;
+}
+.borderBottomNone {
+    border: none;
+}
+.border_line {
+    border: 1px solid #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.meta-section-title{
+	font: 600 15px/26px "Open Sans", sans-serif;
+    color: #242424;
+}
+.meta-description {
+    color: #aaa;
+    font-style: italic;
+}
+.meta-description.align {
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.meta-description.title {
+    margin: 0 auto;
+    width: 50%;
+	margin-top: 5px;
+}
+.d-inline {
+    display: inline-block;
+}
+.autopress_metabox_image {
+    padding: 10px;
+}
+.autopress_upload_image.upload_button_autopress_services_icon.button-primary {
+    display: block;
+    margin: 10px 0;
+}
+.autopress_upload_image.upload_button_autopress_masonry_gallery.button-primary {
+    display: block;
+    margin: 10px 0;
+}
