@@ -23,16 +23,16 @@
 define('DB_NAME', 'troitsa_101');
 
 /** MySQL database username */
-define('DB_USER', 'troitsa');
-//define('DB_USER', 'root');
+//define('DB_USER', 'troitsa');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'bgleb13');
-//define('DB_PASSWORD', '');
+//define('DB_PASSWORD', 'bgleb13');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-//define('DB_HOST', '127.0.0.1');
-define('DB_HOST', 'mysql1004.mochahost.com');
+define('DB_HOST', '127.0.0.1');
+//define('DB_HOST', 'mysql1004.mochahost.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

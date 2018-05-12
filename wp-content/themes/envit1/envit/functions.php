@@ -390,3 +390,36 @@ function backgroundStyle( $key ){
  }
  return $inner_header_style;
 }
+
+//////// Alex Edits
+
+
+if( !function_exists('create_custom_post_label_array') ) {
+	function create_custom_post_label_array($name, $singular_name) {
+		$return_data = array(
+			'name' => __($name),
+			'singular_name' => __($singular_name),
+			'add_new_item' => __("Add New $singular_name"),
+			'add_new' => __("Add New $singular_name"),
+			'new_item' => __("New $singular_name"),
+			'edit_item' => __("Edit $singular_name"),
+			'view_item' => __("View $singular_name"),
+			'search_items' => __("Search $singular_name")
+		);
+		return $return_data;
+	}
+}
+
+// Register post type here 
+function create_post_type() {
+
+register_post_type('artels',
+		array('labels' => create_custom_post_label_array('Artel', 'Artel'),
+			'public' => true,
+			'show_ui' => true,
+			'supports' => array('title', 'editor', 'revisions'),
+			'rewrite' => array('slug' => 'artels')
+		)
+	);
+}
+add_action('init', 'create_post_type');
