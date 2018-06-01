@@ -18,20 +18,42 @@
  * @package WordPress
  */
 
+
+if ( file_exists( dirname(__FILE__) . '/local-config.php' ) ) {
+   include( dirname(__FILE__) . '/local-config.php');
+}
+else {
+   define('DB_NAME', 'decdevu5_troitsa_101');
+   define('DB_USER', 'decdevu5_alex');
+   define('DB_PASSWORD', 'TFZw5e_@3]!4');
+   define('DB_HOST', 'ecbiz246.inmotionhosting.com');
+   
+   define('WP_DEBUG', false);
+}
+
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'troitsa_101');
+//define('DB_NAME', 'troitsa_101');
+//define('DB_NAME', 'decdevu5_troitsa_101');
 
 /** MySQL database username */
 //define('DB_USER', 'troitsa');
-define('DB_USER', 'root');
+//define('DB_USER', 'root');
+//define('DB_USER', 'decdevu5_alex');
+
+
 
 /** MySQL database password */
-//define('DB_PASSWORD', 'bgleb13');
-define('DB_PASSWORD', '');
+//define('DB_PASSWORD', 'TFZw5e_@3]!4');
+//define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+//define('DB_HOST', '127.0.0.1');
+
+//define('DB_HOST', '199.250.194.209');
+
 //define('DB_HOST', 'mysql1004.mochahost.com');
 
 /** Database Charset to use in creating database tables. */
